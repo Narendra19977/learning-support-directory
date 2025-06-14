@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Bright Minds Therapy",
+    "specialization": "Dyslexia Support",
+    "location": "Gurgaon",
+    "rating": 5,
+    "shortDescription": "Specialized in dyslexia assessments and support.",
+    "longDescription": "We offer tailored programs for children with dyslexia, guided by certified specialists.",
+    "contactEmail": "contact@brightminds.com",
+    "phoneNumber": "+91-9876543210"
+  },
+  {
+    "id": 2,
+    "name": "Focus First Coaching",
+    "specialization": "ADHD Coaching",
+    "location": "Delhi",
+    "rating": 4,
+    "shortDescription": "Helping kids focus and thrive.",
+    "longDescription": "Our ADHD coaching program focuses on executive functioning and emotional regulation.",
+    "contactEmail": "info@focusfirst.com",
+    "phoneNumber": "+91-9123456789"
+  },
+  {
+    "id": 3,
+    "name": "The Learning Curve",
+    "specialization": "Autism Support",
+    "location": "Noida",
+    "rating": 4,
+    "shortDescription": "Therapies tailored for kids on the spectrum.",
+    "longDescription": "Individualized education plans and behavior therapy services for autistic children.",
+    "contactEmail": "support@learningcurve.com",
+    "phoneNumber": "+91-9988776655"
+  },
+  {
+    "id": 4,
+    "name": "Neuro Boost",
+    "specialization": "Cognitive Therapy",
+    "location": "Delhi",
+    "rating": 5,
+    "shortDescription": "Cognitive skill development for children.",
+    "longDescription": "We enhance memory, logic, and reasoning abilities in children with learning challenges.",
+    "contactEmail": "hello@neuroboost.com",
+    "phoneNumber": "+91-9001122334"
+  },
+  {
+    "id": 5,
+    "name": "Step Ahead Learning Center",
+    "specialization": "General Learning Support",
+    "location": "Gurgaon",
+    "rating": 3,
+    "shortDescription": "Tutoring and support for all types of learning needs.",
+    "longDescription": "Comprehensive tutoring in reading, writing, and math for students needing extra support.",
+    "contactEmail": "stepahead@gurgaon.com",
+    "phoneNumber": "+91-8899776655"
+  }
+]
