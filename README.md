@@ -103,8 +103,4 @@ npm run build
 - 🌈 Theme toggle (light/dark mode)
 - 💬 Provider detail page with richer content
 
----
 
-## 📄 License
-
-MIT © 2025 [Your Name]
