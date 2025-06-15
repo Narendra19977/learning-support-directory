@@ -1,7 +1,8 @@
 import { Fragment, useContext, useState } from "react";
-import { ProviderContext } from "../contexts/providerContext";
-import ProviderCard from "../components/ProviderCard";
-import Loader from "../components/Loader";
+import { ProviderContext } from "../../contexts/providerContext";
+import ProviderCard from "../../components/ProviderCard";
+import Loader from "../../components/Loader";
+import styles from "./ProviderList.module.css"
 
 const ProviderListPage = () => {
   const { providers, loading,err } = useContext(ProviderContext);
@@ -16,16 +17,16 @@ const ProviderListPage = () => {
   if (loading) return <Loader/>;
 
 return (
-  <div className="page-container">
-    <h1 className="page-title">Learning Support Providers</h1>
+  <div className={styles.pageContainer}>
+    <h1 className={styles.pageTitle}>Learning Support Providers</h1>
     <input
-      className="search-input"
+      className={styles.searchInput}
       type="text"
       placeholder="Search by name or specialization"
       value={search}
       onChange={(e) => setSearch(e.target.value)}
     />
-    <div className="provider-grid" style={{marginTop:10}}>
+    <div className={styles.providerGrid} style={{marginTop:10}}>
       {filteredProviders.map((provider) => (
         <ProviderCard key={provider.id} provider={provider} />
       ))}
