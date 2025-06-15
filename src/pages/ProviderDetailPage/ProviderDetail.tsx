@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { ProviderContext } from "../../contexts/providerContext";
 import styles from "./ProviderDetailPage.module.css";
-import Loader from "../../components/Loader";
+import Loader from "../../components/Loader/Loader";
 
 const ProviderDetailPage = () => {
   const { id } = useParams();
