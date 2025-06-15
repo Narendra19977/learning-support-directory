@@ -1,54 +1,102 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Learning Support Provider Directory
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Node.js (v16+)
+- npm or yarn
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Installation
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```bash
+git clone https://github.com/your-username/learning-support-library.git
+cd learning-support-library
+yarn install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Run Locally
+- yarn run dev
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Defininition of react A React + TypeScript application built with Vite that allows users to browse, search, and view details about various Learning Support Providers. The app uses simulated API data and implements clean routing, filtering, and responsive design using modern React practices.
+
+--
+
+## 🚀 Features
+
+- 📚 **Provider Listing Page**
+  - Displays all learning support providers
+  - Search functionality for provider names
+  - Responsive design with mobile-first layout
+
+- 🔍 **Provider Detail Page**
+  - View detailed info about a specific provider
+  - Navigation with `react-router-dom`
+
+- ⚙️ **State Management**
+  - Global state via Context API and Hooks
+  - Data simulation with mock JSON
+
+- 🧩 **Component Design**
+  - Reusable components like `ProviderCard`, `SearchInput`, `Loader`
+  - Modular structure and scalable file organization
+
+---
+
+## 🧱 Tech Stack
+
+- React 19.1.0
+- TypeScript
+- Vite
+- React Router DOM
+- CSS Modules (modular styling applied throughout)
+- Context API + React Hooks
+
+---
+
+## 🧭 Folder Structure
+src/
+├── api/
+│ └── fetchProvider.ts # Simulated async fetch function
+├── components/
+│ ├── ProviderCard/
+│ ├── SearchInput/
+│ └── Loader/
+├── contexts/
+│ └── providerContext.tsx
+├── data/
+│ └── providers.json # Mock provider data
+├── pages/
+│ ├── ProviderListPage/
+│ └── ProviderDetailPage/
+├── App.tsx
+└── main.tsx
+
+
+
+
+
+
+---
+
+## 🎨 Styling Notes
+
+- Initially started with **global CSS**, but later transitioned to a **CSS Modules approach**.
+- All components now use modular CSS files for **encapsulation and maintainability**.
+- Responsiveness implemented through CSS Modules — tweaked for **mobile, tablet, and desktop** views.
+
+---
+
+## 📋 Commit & Branch Practices
+
+- Used **feature branches** for every major component or styling refactor.
+- Commit messages are atomic and meaningful:
+  - `feat: add search input component`
+  - `refactor: move to CSS Modules in ProviderCard`
+  - `style: update responsive layout for small devices`
+  - `chore: clean up unused styles`
+
+---
+
