@@ -1,4 +1,4 @@
-.provider-card {
+.providerCard {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1rem;
@@ -7,18 +7,18 @@
   background-color: #fff;
 }
 
-.provider-card:hover {
+.providerCard:hover {
   background-color: #f5f5f5;
 }
 
-.provider-card h2 {
+.providerCard h2 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: #333;
 }
 
-.provider-card p {
+.providerCard p {
   margin: 0.25rem 0;
   color: #555;
   font-size: 0.95rem;

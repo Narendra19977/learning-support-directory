@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { type Provider } from '../types/provider.type';
-import './ProviderCard.css'; // <-- Import the CSS file
+import { type Provider } from '../../types/provider.type';
+import styles from "./ProviderCard.module.css"
 
 type Props = { provider: Provider };
 
@@ -10,7 +10,7 @@ const ProviderCard: React.FC<Props> = ({ provider }) => {
 
   return (
     <div
-      className="provider-card"
+      className={styles.providerCard}
       onClick={() => navigate(`/providers/${provider.id}`)}
     >
       <h2>{provider.name}</h2>
