@@ -1,23 +1,23 @@
 import { useContext } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { ProviderContext } from "../contexts/providerContext";
-import "./ProviderDetailPage.css";
-import Loader from "../components/Loader";
+import { ProviderContext } from "../../contexts/providerContext";
+import styles from "./ProviderDetailPage.module.css";
+import Loader from "../../components/Loader";
 
 const ProviderDetailPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const { providers, loading } = useContext(ProviderContext);
 
-  if (loading) return <Loader/>
+  if (loading) return <Loader />;
 
   const provider = providers.find((provider) => provider.id === Number(id));
 
   if (!provider) {
     return (
-      <div className="p-4">
+      <div className={styles.detailContainer}>
         <p>Provider not found.</p>
-        <button className="mt-2 text-blue-500" onClick={() => navigate("/")}>
+        <button className={styles.backButton} onClick={() => navigate("/")}>
           Back to List
         </button>
       </div>
@@ -25,12 +25,12 @@ const ProviderDetailPage = () => {
   }
 
   return (
-    <div className="detail-container">
-      <button className="back-button" onClick={() => navigate("/")}>
+    <div className={styles.detailContainer}>
+      <button className={styles.backButton} onClick={() => navigate("/")}>
         ← Back to List
       </button>
-      <h1 className="provider-title">{provider.name}</h1>
-      <div className="provider-info">
+      <h1 className={styles.providerTitle}>{provider.name}</h1>
+      <div className={styles.providerInfo}>
         <p>
           <strong>Specialization:</strong> {provider.specialization}
         </p>
