@@ -1,7 +1,7 @@
 import { Fragment, useContext, useState } from "react";
 import { ProviderContext } from "../../contexts/providerContext";
 import ProviderCard from "../../components/ProviderCard/ProviderCard";
-import Loader from "../../components/Loader";
+import Loader from "../../components/Loader/Loader";
 import styles from "./ProviderList.module.css"
 
 const ProviderListPage = () => {

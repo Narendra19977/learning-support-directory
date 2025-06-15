@@ -1,9 +1,11 @@
-.loader-container {
+.loaderContainer {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
+  width: 50vw;
+  height: 10vh;           
   min-height: 200px;
-  margin-left:20px
+  background-color: transparent; 
 }
 
 .spinner {
@@ -16,6 +18,10 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
