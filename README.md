@@ -1,102 +1,110 @@
+# 🧠 Learning Support Directory
 
-# Learning Support Provider Directory
+A responsive, searchable directory of Learning Support Providers built with **React**, **TypeScript**, **Vite**, and **modular CSS**. The application demonstrates real-world patterns like state management with **React Context**, client-side routing, and simulated API integration.
 
 ---
-
-## 🛠️ Getting Started
-
-### Prerequisites
-
-- Node.js (v16+)
-- npm or yarn
-
-### Installation
-
-```bash
-git clone https://github.com/your-username/learning-support-library.git
-cd learning-support-library
-yarn install
-
-### Run Locally
-- yarn run dev
-
-Defininition of react A React + TypeScript application built with Vite that allows users to browse, search, and view details about various Learning Support Providers. The app uses simulated API data and implements clean routing, filtering, and responsive design using modern React practices.
-
---
 
 ## 🚀 Features
 
-- 📚 **Provider Listing Page**
-  - Displays all learning support providers
-  - Search functionality for provider names
-  - Responsive design with mobile-first layout
-
-- 🔍 **Provider Detail Page**
-  - View detailed info about a specific provider
-  - Navigation with `react-router-dom`
-
-- ⚙️ **State Management**
-  - Global state via Context API and Hooks
-  - Data simulation with mock JSON
-
-- 🧩 **Component Design**
-  - Reusable components like `ProviderCard`, `SearchInput`, `Loader`
-  - Modular structure and scalable file organization
+- 🔍 **Search Functionality** with **debouncing** to optimize performance during typing.
+- ⚛️ **React Context API** for centralized state management of providers and loading states.
+- 🧩 **Component-based architecture** with reusable, styled UI elements.
+- 🎨 **CSS Modules** for scoped, maintainable styles across all components.
+- 🔄 **Simulated API Integration** using local JSON data via `fetchProvider.ts`.
+- 📱 **Responsive design** with device-specific layout adjustments.
+- ⚠️ **Error & Loading states** handled gracefully with custom messages and loaders.
 
 ---
 
-## 🧱 Tech Stack
+## 🗂️ Folder Structure
 
-- React 19.1.0
-- TypeScript
-- Vite
-- React Router DOM
-- CSS Modules (modular styling applied throughout)
-- Context API + React Hooks
-
----
-
-## 🧭 Folder Structure
+```
 src/
+│
 ├── api/
-│ └── fetchProvider.ts # Simulated async fetch function
+│   └── fetchProvider.ts          # Simulates API call from local JSON
+│
 ├── components/
-│ ├── ProviderCard/
-│ ├── SearchInput/
-│ └── Loader/
+│   ├── Loader/                   # Reusable loading spinner
+│   └── ProviderCard/            # UI card for displaying provider info
+│
 ├── contexts/
-│ └── providerContext.tsx
-├── data/
-│ └── providers.json # Mock provider data
+│   └── providerContext.tsx      # React Context for providers state
+│
 ├── pages/
-│ ├── ProviderListPage/
-│ └── ProviderDetailPage/
-├── App.tsx
-└── main.tsx
-
-
-
-
-
-
----
-
-## 🎨 Styling Notes
-
-- Initially started with **global CSS**, but later transitioned to a **CSS Modules approach**.
-- All components now use modular CSS files for **encapsulation and maintainability**.
-- Responsiveness implemented through CSS Modules — tweaked for **mobile, tablet, and desktop** views.
+│   └── ProviderList/            # Main listing page with search
+│
+├── styles/
+│   └── (CSS Modules)            # Scoped component styles
+│
+├── utils/
+│   └── debounce.ts              # Debounce utility for performance
+│
+└── App.tsx                      # Routing and layout
+```
 
 ---
 
-## 📋 Commit & Branch Practices
+## 🧪 Simulated Data
 
-- Used **feature branches** for every major component or styling refactor.
-- Commit messages are atomic and meaningful:
-  - `feat: add search input component`
-  - `refactor: move to CSS Modules in ProviderCard`
-  - `style: update responsive layout for small devices`
-  - `chore: clean up unused styles`
+Data is stored in a local JSON file and fetched through `fetchProvider.ts` inside the `api/` folder. This mock API simulates async behavior to mimic real-world loading.
 
 ---
 
+## 🔧 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/learning-support-directory.git
+cd learning-support-directory
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Run locally
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+### 4. Build for production
+
+```bash
+npm run build
+```
+
+---
+
+## 🛠 Technologies Used
+
+- **React** + **TypeScript**
+- **Vite** for fast bundling
+- **CSS Modules** for scoped styling
+- **React Router** for routing
+- **Context API** for global state
+- **ESLint + Prettier** (optional for formatting & linting)
+
+---
+
+## 🧠 Future Improvements
+
+- 🗃️ Integrate a real backend (e.g. Firebase or Express API)
+- ✅ Add unit tests with React Testing Library
+- 🌐 Implement pagination or infinite scrolling
+- 🌈 Theme toggle (light/dark mode)
+- 💬 Provider detail page with richer content
+
+---
+
+## 📄 License
+
+MIT © 2025 [Your Name]
