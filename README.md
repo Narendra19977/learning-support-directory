@@ -63,23 +63,19 @@ cd learning-support-directory
 ### 2. Install dependencies
 
 ```bash
-npm install
-# or
 yarn install
 ```
 
 ### 3. Run locally
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
 ### 4. Build for production
 
 ```bash
-npm run build
+yarn run build
 ```
 
 ---
