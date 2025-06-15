@@ -14,7 +14,7 @@ const ProviderListPage = () => {
   if(err){
     return <Fragment>{JSON.stringify(err)}</Fragment>
   }
-  if (loading) return <Loader/>;
+
 
 return (
   <div className={styles.pageContainer}>
@@ -27,7 +27,7 @@ return (
       onChange={(e) => setSearch(e.target.value)}
     />
     <div className={styles.providerGrid} style={{marginTop:10}}>
-      {filteredProviders.map((provider) => (
+      {loading ? <Loader/>: filteredProviders.map((provider) => (
         <ProviderCard key={provider.id} provider={provider} />
       ))}
     </div>
