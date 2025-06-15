@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ProviderProvider } from "./contexts/providerContext";
 import React from "react";
 const ProviderListPage=React.lazy(()=>import("./pages/ProviderList"))
-const ProviderDetailPage = React.lazy(()=>import("./pages/ProviderDetail"))
+const ProviderDetailPage = React.lazy(()=>import("./pages/ProviderDetailPage/ProviderDetail"))
 
 
 const App = () => {

@@ -1,4 +1,4 @@
-.detail-container {
+.detailContainer {
   padding: 1rem;
   margin: auto;
   max-width: 90%;
@@ -6,18 +6,18 @@
 }
 
 @media (min-width: 640px) {
-  .detail-container {
+  .detailContainer {
     max-width: 600px;
   }
 }
 
 @media (min-width: 1024px) {
-  .detail-container {
+  .detailContainer {
     max-width: 800px;
   }
 }
 
-.back-button {
+.backButton {
   display: inline-block;
   margin-bottom: 1rem;
   color: #2563eb;
@@ -27,31 +27,31 @@
   cursor: pointer;
 }
 
-.provider-title {
+.providerTitle {
   font-size: 1.75rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-.provider-info p {
+.providerInfo p {
   margin: 0.5rem 0;
   font-size: 1rem;
   line-height: 1.5;
   word-wrap: break-word;
 }
 
-.provider-info strong {
+.providerInfo strong {
   display: inline-block;
   width: 140px;
   font-weight: 600;
 }
 
 @media (max-width: 480px) {
-  .provider-title {
+  .providerTitle {
     font-size: 1.5rem;
   }
 
-  .provider-info strong {
+  .providerInfo strong {
     width: auto;
     display: block;
     margin-bottom: 0.2rem;
